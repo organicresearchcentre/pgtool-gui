@@ -22,6 +22,6 @@ If you want to host this version of the PG Tool on your local computer or server
 
 The GUI is currently configured to run in the path "/pgtool-gui". If you wish to use another path i.e. for a customised version, then there are two required alterations:
 
-- in the `.htaccess` file: replace all "pgtool-gui" string occurrences to the desired path.
+- in the `.htaccess` file: replace all "pgtool-gui" string occurrences with the desired path.
 
-- in the `js/script.js` file: replace `base: '/pgtool-gui'` to the desired path.
+- in the `js/script.js` file: replace `base: '/pgtool-gui'` with the desired path.
