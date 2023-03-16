@@ -14,7 +14,7 @@ For any queries about the PG Tool please contact github@organicresearchcentre.co
 
 ## How to run the website
 
-This is currently configured to run in the path "/pgtool-gui". Wether you want to run this in your local computer, or upload it to some server, there are two configurations that need to be adapted for other paths:
+This is currently configured to run in the path "/pgtool-gui". Wether you want to run this in your local computer, or upload it to a server, there are two configurations that need to be adapted for other paths:
 
 - in the `.htaccess` file: replace all "pgtool-gui" string occurrences to the desired path.
 
