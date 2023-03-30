@@ -39,7 +39,7 @@ module.exports = {
 		prepareTooltips() {
 			$('[data-toggle="tooltip"]').each(function() {
 					$(this).tooltip({
-					template: '<div class="tooltip ' + self.categoryCode + '-menu-tooltip" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>',
+					template: '<div class="tooltip menu-tooltip" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>',
 					container: '#app'
 					})
 			})

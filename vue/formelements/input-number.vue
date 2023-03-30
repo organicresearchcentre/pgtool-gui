@@ -19,24 +19,29 @@ module.exports = {
 	},
 	methods: {
 		getDatasetElement() {
+			var cat = 'initialdata'
+			var ind = 'initialdata_crops'
 			var qcode = 'initialdata_crops_cropname'
-			var datasetID = 'CROPS'
 			if (this.question.question_code.includes('livestockprod') || this.question.question_code.includes('livestock_product')) {
+				cat = 'initialdata'
+				ind = 'initialdata_livestock'
 				qcode = 'initialdata_livestock_producttype'
-				datasetID = 'LIVESTOCK_PRODUCTS'
 			} else if (this.question.question_code.includes('livestock')) {
+				cat = 'initialdata'
+				ind = 'initialdata_livestock'
 				qcode = 'initialdata_livestock_type'
-				datasetID = 'LIVESTOCK'
 			} else if (this.question.question_code.includes('ownfuelamount')) {
+				cat = 'energycarbon'
+				ind = 'energycarbon_fueluse'
 				qcode = 'energycarbon_fueluse_ownfueltype'
-				datasetID = 'FUELS'
 			} else if (this.question.question_code.includes('contractoramount')) {
+				cat = 'energycarbon'
+				ind = 'energycarbon_fueluse'
 				qcode = 'energycarbon_fueluse_contractortype'
-				datasetID = 'CONTRACTS'
 			}
 			var answer = this.currentAssessmentAnswers[qcode][this.answerIndex]
 			if (answer !== null && answer !== undefined && answer !== "" && answer !== "null") {
-				return this.$root.pgtool.DATASETS[datasetID][answer]
+				return this.$root.pgtoolForm.categories[cat].indicators[ind].questions[qcode].answer_list.filter(function(el) { return el.answer_code == answer })[0]
 			} else {
 				return false
 			}
@@ -76,7 +81,7 @@ module.exports = {
       return null
     },
 		hasAnswerUnits() {
-			if (!this.toShowUnits && !this.toShowSalesUnits) {
+			if (!this.toShowUnits) {
 				return 'answer_unit' in this.question ? this.question.answer_unit : null
 			}
 		},
@@ -84,23 +89,15 @@ module.exports = {
 			var qcodes = [ 'initialdata_livestock_productimport', 'initialdata_livestock_productexport', 'energycarbon_fueluse_ownfuelamount', 'energycarbon_fueluse_contractoramount' ]
 			return qcodes.includes(this.question.question_code)
 		},
-		toShowSalesUnits() {
-			var qcodes = [ 'productivity_financial_pricereceivedstandardcrops', 'productivity_financial_pricereceivedspecialistcrops', 'productivity_financial_pricereceivedstandardlivestock', 'productivity_financial_pricereceivedspecialistlivestock', 'productivity_financial_pricereceivedstandardlivestockprod', 'productivity_financial_pricereceivedspecialistlivestockprod' ]
-			return qcodes.includes(this.question.question_code)
-		},
 		getUnits() {
       var element = this.getDatasetElement()
-			return element ? element.units : null
+			return element ? element.answer_unit : null
     },
-		getSalesUnits() {
-			var element = this.getDatasetElement()
-			return element ? element.sales_units : null
-		},
 		showInputAppend() {
-			return (this.toShowSalesUnits && this.getSalesUnits) || (this.toShowUnits && this.getUnits) || this.hasAnswerUnits
+			return (this.toShowUnits && this.getUnits) || this.hasAnswerUnits
 		},
 		units() {
-			return this.toShowUnits ? this.getUnits : (this.toShowSalesUnits ? this.getSalesUnits : this.hasAnswerUnits)
+			return this.toShowUnits ? this.getUnits : this.hasAnswerUnits
 		},
 		step() {
 			if (this.hasAnswerUnits) {
@@ -125,6 +122,5 @@ module.exports = {
 			</div>
 		</div>
 		<small v-if="toFocus && !disabled" class="form-text text-muted">This needs to be answered</small>
-		<small v-if="question.question_code == 'initialdata_farminfo_atmosdeposition' && answer === false" class="form-text warning">Coordinate out of the EMEP grid boundaries. Longitude should be between -30 and 90, latitude should be between 30 and 82.</small>
 	</div>
 </template>

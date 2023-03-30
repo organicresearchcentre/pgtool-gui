@@ -127,23 +127,23 @@ module.exports = {
 <template>
     <div id="tabs">
         <ul class="nav nav-tabs pt-1">
-            <li v-for="tab, index in tabs" :key="index" class="nav-item mx-2 soft" @click="changeTab(index, true)">
-                <a class="nav-link" :class="{'active': activeTab(index)}" href="#">
+            <li v-for="tab, index in tabs" :key="index" class="nav-item mx-2 soft" v-on:click="changeTab(index, true)">
+                <span class="nav-link pointer" :class="{'active': activeTab(index)}">
                     <input v-if="tab.editing" v-model="tab.name" type="text" @keyup.enter="saveTab(index)">
                     <span v-else>{{tab.name}}</span>
                     <span v-if="activeTab(index)">
-                        <i v-if="tab.editing" class="far fa-save" @click="saveTab(index)"></i>
-                        <i v-else class="ml-2 fas fa-pencil-alt" @click="editTab(index)"  data-toggle="tooltip" data-placement="top" title="Edit assessment name"></i>
-                        <i class="ml-2 far fa-clone" @click.stop="cloneTab(index)" data-toggle="tooltip" data-placement="top" title="Clone assessment"></i>
-                        <i class="ml-2 fas fa-times" @click.stop="openRemoveTabModal()" data-toggle="tooltip" data-placement="top" title="Delete assessment"></i>
+                        <i v-if="tab.editing" class="far fa-save" v-on:click="saveTab(index)"></i>
+                        <i v-else class="ml-2 fas fa-pencil-alt" v-on:click="editTab(index)"  data-toggle="tooltip" data-placement="top" title="Edit assessment name"></i>
+                        <i class="ml-2 far fa-clone" v-on:click.stop="cloneTab(index)" data-toggle="tooltip" data-placement="top" title="Clone assessment"></i>
+                        <i class="ml-2 fas fa-times" v-on:click.stop="openRemoveTabModal()" data-toggle="tooltip" data-placement="top" title="Delete assessment"></i>
                         <!-- .stop event modifier prevents the click event propagation, and hence the changeTab -->
                     </span>
-                </a>
+                </span>
             </li>
             <li class="nav-item soft locked mx-2">
-                <a class="nav-link no-border" href="#" @click="addNewTab()">
+                <span class="nav-link no-border pointer" v-on:click="addNewTab()">
                     <i class="fas fa-plus"></i> New assessment
-                </a>
+                </span>
             </li>
         </ul>
     </div>
