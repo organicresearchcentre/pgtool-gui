@@ -681,14 +681,17 @@ table tr.add-row td {
 .tooltip.show {
 	opacity: 1;
 }
-.options-tooltip {
+.options-tooltip,
+.menu-tooltip {
 	font-size: 0.7rem;
 }
-.options-tooltip .arrow::before {
+.options-tooltip .arrow::before,
+.menu-tooltip .arrow::before {
 	border-top-color: #adadad;
 	border-bottom-color: #adadad;
 }
-.options-tooltip .tooltip-inner {
+.options-tooltip .tooltip-inner,
+.menu-tooltip .tooltip-inner {
 	color:white;
 	background-color: #adadad;
 }
@@ -840,14 +843,14 @@ input:checked + .slider:before {
 	box-shadow: 0 0 0 0.2rem var(--light);
 }
 .category#category .question-group { border: solid 1px var(--light); }
-.menu-tooltip .arrow::before {
+/*.menu-tooltip .arrow::before {
 	border-top-color: var(--light);
 	border-bottom-color: var(--light);
 }
 .menu-tooltip .tooltip-inner {
 	color:white;
 	background-color:var(--light);
-}
+}*/
 #category .glow-text { animation: glow-text 1s ease-in-out infinite alternate; }
 #category .glow { animation: glow-category 1s ease-in-out infinite alternate; }
 @keyframes glow-text {

@@ -181,7 +181,6 @@ var app = new Vue({
         this.checkWidth();
         
         this.addFormNumbering();
-        //this.editBiodiversityQuestions();
         this.setQuestionsLinks();
         this.setupAssessment();
         
@@ -300,15 +299,6 @@ var app = new Vue({
                 })
             });
         },
-        editBiodiversityQuestions() {
-            var form = this.pgtoolForm.categories.biodiversity.indicators.biodiversity_landscape.questions
-            for (qcode of [ 'biodiversity_landscape_arabletype', 'biodiversity_landscape_grasslandtype', 'biodiversity_landscape_heathlandtype', 'biodiversity_landscape_othertype', 'biodiversity_landscape_wetlandtype', 'biodiversity_landscape_woodlandtype' ]) {
-                form[qcode].question_name = "Type of habitat"
-            }
-            for (qcode of [ 'biodiversity_landscape_arablearea', 'biodiversity_landscape_grasslandarea', 'biodiversity_landscape_heathlandarea', 'biodiversity_landscape_otherarea', 'biodiversity_landscape_wetlandarea', 'biodiversity_landscape_woodlandarea' ]) {
-                form[qcode].question_name = "Area"
-            }
-        },
         addFormNumbering() {
             var i = 1
             for (cat in this.pgtoolForm.categories) {
@@ -407,7 +397,7 @@ var app = new Vue({
             }
             return finalName
         },
-        setupAssessment(loadedAssessment, assessmentName, version, tool) {
+        setupAssessment(loadedAssessment, assessmentName) {
             var self = this
 
             var loadedAnswers = null

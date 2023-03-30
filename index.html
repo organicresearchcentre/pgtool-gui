@@ -143,7 +143,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap4-toggle/3.6.1/bootstrap4-toggle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+    <script type="text/javascript">
+        // https://stackoverflow.com/a/50301152/20003174
+        // Notice how this gets configured before we load Font Awesome
+        window.FontAwesomeConfig = { autoReplaceSvg: false }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
     
     <script type="text/javascript" src="js/helper.js""></script>
 	<script type="text/javascript" src="vue/mixins.js"></script>
