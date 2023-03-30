@@ -14,6 +14,7 @@ The PG Tool Online v3.1 is open for anyone who is interested to use. It is geare
 ##
 **Starting an Assessment**
 
+The base version of the PG Tool can be found at the [Organic Research Centre website](https://www.organicresearchcentre.com/PG-Tool/).
 On opening the tool you will be met with a tab which contains 14 categories. To begin we will name the assessment by clicking on the pencil icon in the top left. You can edit the name of the assessment at any time.
 Once the assessment is named we will click on the first category, "Initial data". This will bring up the first data collection page. Go through each of the fields inputting the relevant data.
 
