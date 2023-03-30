@@ -8,7 +8,7 @@ built over the years to address specific research interests.
 This website structure, developed in collaboration with [MVARC](https://mvarc.eu/), is the
 latest iteration based upon the original PG Tool v3.1 Excel-based farm sustainability assessment tool created by [Organic Research Centre](https://www.organicresearchcentre.com). It offers an interface that makes this tool accessible (and its corresponding [API](https://github.com/organicresearchcentre/pgtool-api)) and available for farmers, advisors and researchers to interact and learn with it.
 
-You can access this version of the PG Tool at the ORC website here (TBA).
+You can access this version of the PG Tool at the ORC website [here](https://www.organicresearchcentre.com/PG-Tool/).
 
 A user guide for self-assessments has also been created for this version of PG Tool available [here](https://github.com/organicresearchcentre/pgtool-gui/blob/main/PG%20Tool%20Online%20v3.1%20Manual.md).
 
