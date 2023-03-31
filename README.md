@@ -18,7 +18,7 @@ For any queries about the PG Tool please contact github@organicresearchcentre.co
 
 ## How to run the website
 
-If you want to host this version of the PG Tool on your local computer or server, then simply download the files for the GUI and place them in the desired directory. If you just want the underlying code without this web interface, then please see the [API](https://github.com/organicresearchcentre/pgtool-api).
+If you want to host this version of the PG Tool on your local computer or server, then simply download the files for the GUI and the [API](https://github.com/organicresearchcentre/pgtool-api) place them in the desired directory.
 
 The GUI is currently configured to run in the path "/pgtool-gui". If you wish to use another path i.e. for a customised version, then there are two required alterations:
 
