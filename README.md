@@ -16,7 +16,7 @@ For developers there is further infromation about the design and future developm
 
 For any queries about the PG Tool please contact github@organicresearchcentre.com.
 
-## How to run the website
+## How to host the website
 
 If you want to host this version of the PG Tool on your local computer or server, then simply download the files for the GUI and the [API](https://github.com/organicresearchcentre/pgtool-api) place them in the desired directory.
 
