@@ -31,6 +31,7 @@ Once the "initial data" page has been completed, click on the "categories" tab o
  The data you input is not stored on a web server and must be saved and re-uploaded manually. Saving an assessment can be done at anytime by clicking on the top right "save" icon. This will then open a window prompting you to confirm the name of the file, choose if you want to anonymise the file (i.e. remove names), and then save it. This will then be downloaded as a JSON file to your computer.
 To open a partially or fully completed assessment, click on the "open" icon  on the top right. This will open another window where you can click "choose file" and then select the previously saved JSON file. Then simply press "load data".
 When going back to edit an assessment, the scores can be updated to account for new information by clicking on the lower left button marked "Update score".
+Two example farms have been filled out and saved ad example_farms.json, included in this download. Using these can help you learn to load in the assessments and provides a benchmark for your assessment.
 
 **Duplicating, Deleting, and Starting Multiple Assessments**
 
