@@ -93,6 +93,8 @@ Report:
 
 **Global Farm Metric** - While initially starting in 2017, the Global Farm Metric (GFM) has built upon the PGTools, adding in additional indicators, weighting for results, and other adaptations to create a general farm sustainability tool for global use. The work of the GFM still continues today.
 
+**REFOREST** - In 2025 the online version of the public goods tool was modified for the European Horizons [REFOREST project](https://agroreforest.eu/). This was originally developed as an excel version based on the Sustain PG Tool by Tom Staton (University of Reading). Organic Research Centre then transferred this to the online version.
+
 Reports:
 - [Global Farm Metric Reports](https://www.globalfarmmetric.org/reports/)
 
@@ -107,4 +109,5 @@ To encourage adaptation the PG Tool has been released under an open MIT licence.
 Organic Research Centre, MVARC (2023). Public Goods Tool Online v3.1. Github. https://github.com/Organicresearchcentre.
 
 For past versions of the PG Tool, such as those utilised in the projects above, please contact [christian.g@organicresearchcentre.com](mailto:christian.g@organicresearchcentre.com).
+
 
