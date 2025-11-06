@@ -102,8 +102,9 @@ Reports:
 
 The PG Tool is highly adaptable and had been used in a multitude of scenarios to assess a wide range of indicators. The move to an online-version will allow for an altogether more comprehensible experience for farmers and researchers alike.
 The move to github also allows for researchers to easily fork and adapt PG Tool for their own use. The base version of the PG Tool will be kept by ORC to provide a single source for anyone who wishes to complete an assessment themselves.
-To encourage adaptation the PG Tool has been released under an open MIT licence. We would urge those who wish to adapt PG Tool for their own research to contact [github@organicresearchcentre.com](mailto:github@organicresearchcentre.com) with details of their adaptation so we can keep the records up to date. Likewise, we would encourage any published work utilising the base version of the PG Tool to reference it as so:
+To encourage adaptation the PG Tool has been released under an open MIT licence. We would urge those who wish to adapt PG Tool for their own research to contact [christian.g@organicresearchcentre.com](mailto:christian.g@organicresearchcentre.com) with details of their adaptation so we can keep the records up to date. Likewise, we would encourage any published work utilising the base version of the PG Tool to reference it as so:
 
 Organic Research Centre, MVARC (2023). Public Goods Tool Online v3.1. Github. https://github.com/Organicresearchcentre.
 
-For past versions of the PG Tool, such as those utilised in the projects above, please contact [github@organicresearchcentre.com](mailto:github@organicresearchcentre.com).
+For past versions of the PG Tool, such as those utilised in the projects above, please contact [christian.g@organicresearchcentre.com](mailto:christian.g@organicresearchcentre.com).
+
