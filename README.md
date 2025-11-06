@@ -14,7 +14,7 @@ A user guide for self-assessments has also been created for this version of PG T
 
 For developers there is further infromation about the design and future development of the PG Tool available [here](https://github.com/organicresearchcentre/pgtool-gui/blob/main/PG%20Tool%20Online%20Development.md).
 
-For any queries about the PG Tool please contact github@organicresearchcentre.com.
+For any queries about the PG Tool please contact christian.g@organicresearchcentre.com.
 
 ## How to host the website
 
@@ -27,3 +27,4 @@ The GUI is currently configured to run in the path "/pgtool-gui". If you wish to
 - in the `.htaccess` file: replace all "pgtool-gui" string occurrences with the desired path.
 
 - in the `js/script.js` file: replace `base: '/pgtool-gui'` with the desired path.
+
